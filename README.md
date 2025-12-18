@@ -1,6 +1,10 @@
 Room Temperature Monitoring System using Modbus TCP, MQTT and OpenSCADA
- Overview :
+ 
+ 
+ 
+Overview :
 This project implements an embedded room temperature monitoring and control system using a BeagleBone Black and DHT11 temperature sensor.
+
 The system integrates Modbus TCP and MQTT protocols for industrial communication and uses OpenSCADA as the Human-Machine Interface (HMI) for real-time monitoring and visualization.
 
 System Architecture :
