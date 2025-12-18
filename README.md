@@ -1,64 +1,23 @@
-Room Temperature Monitoring System using Modbus TCP, MQTT and OpenSCADA
- 
- 
- 
-Overview :
-This project implements an embedded room temperature monitoring and control system using a BeagleBone Black and DHT11 temperature sensor.
+Room Temperature Monitoring using Modbus TCP, MQTT & OpenSCADA
+Overview
 
-The system integrates Modbus TCP and MQTT protocols for industrial communication and uses OpenSCADA as the Human-Machine Interface (HMI) for real-time monitoring and visualization.
+Embedded room temperature monitoring/control system using BeagleBone Black and DHT11.
+Data is exposed via Modbus TCP, published through MQTT, and visualized in real time on OpenSCADA HMI.
 
-System Architecture :
-
-Sensor Layer:
-
-DHT11 temperature sensor connected to BeagleBone Black
-
-Custom Linux kernel module for sensor interfacing
-
-Communication Layer:
-
-Modbus TCP server for industrial data access
-
-MQTT for lightweight data publishing and messaging
-
-Protocol bridging between Modbus TCP and MQTT
-
-SCADA Layer:
-
-OpenSCADA for real-time data visualization
-
-HMI configuration for remote monitoring and control
+Tech :
 
 Hardware: BeagleBone Black, DHT11
 
 Protocols: Modbus TCP, MQTT
 
-Software & Tools:
+Key Features : 
 
-Embedded Linux
+DHT11 sensor reading via Linux kernel module
 
-C (Linux kernel module development)
+Modbus TCP server for industrial access
 
-Python (MQTT client/server)
+MQTT publish/subscribe for telemetry
 
-OpenSCADA
+OpenSCADA HMI for real-time visualization & interaction
 
-📂 Project Structure
-Openscada_project/
-│
-├── MQTT_TCP/        # MQTT client/server and Modbus TCP integration
-├── RTU_Mobus/       # Modbus RTU / TCP implementation
-├── README.md        # Project documentation
-
-
-Features :
-
-Real-time temperature acquisition from DHT11 sensor
-
-Modbus TCP server implementation for industrial communication
-
-MQTT-based data publishing for scalable monitoring
-
-OpenSCADA HMI for live visualization and user interaction
-
-Linux kernel module for low-level sensor access
+Bridging between Modbus TCP ↔ MQTT
