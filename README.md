@@ -1,5 +1,5 @@
 Thực hiện bởi :
-Nguyễn Minh Trung - B21DCDT226
+Nguyễn Minh Trung - B21DCDT226 và
 Trần Đức Hưng - B21DCDT106 
 
 
